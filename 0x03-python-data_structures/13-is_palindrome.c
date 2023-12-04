@@ -3,25 +3,25 @@
 #include <stdio.h>
 
 /**
-*add_nodeint - adds a new node at the beginning of a listint_t list
+*add_nodeint - This adds a new node at the beginning of a listint_t list
 *@head: head of listint_t
-*@n: int to add in listint_t list
+*@n: The int to add in listint_t list
 *Return: address of the new element, or NULL if it failed
 */
 listint_t *add_nodeint(listint_t **head, const int n)
 {
-	listint_t *latest;
+	listint_t *new;
 
-	latest = malloc(sizeof(listint_t));
-	if (latest == NULL)
+	new = malloc(sizeof(listint_t));
+	if (new == NULL)
 		return (NULL);
-	latest->n = n;
-	latest->next = *head;
-	*head = latest;
-	return (latest);
+	new->n = n;
+	new->next = *head;
+	*head = new;
+	return (new);
 }
 /**
-*is_palindrome - identify if a single linked list is palindrome
+*is_palindrome - This identifies if a single linked list is palindrome
 *@head: head of listint_t
 *Return: 1 if it is palindrome else 0
 */
