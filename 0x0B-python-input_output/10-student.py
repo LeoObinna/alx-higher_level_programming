@@ -3,10 +3,10 @@
 
 
 class Student:
-    """Represents a student with first_name, last_name, and age."""
+    """Represents a student."""
 
     def __init__(self, first_name, last_name, age):
-        """Instantiates a Student with first_name, last_name, and age.
+        """Initializes a new Student.
 
         Args:
             first_name (str): The first name of the student.
